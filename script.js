@@ -152,6 +152,23 @@ function enviarFormulario(event) {
     }
 }
 
+// Adiciona eventos de clique aos botões de filtro
+const filterButtons = document.querySelectorAll('.main_gifts_btns_btn');
+
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const filterType = button.textContent;
+        filtrarProdutos(filterType);
+    });
+});
+
+function filtrarProdutos(tipo) {
+    // Aqui você deve ter um array de produtos disponível
+    const produtosFiltrados = produtos.filter(produto => produto.tipo === tipo);
+    // Chama a função que gera os cards com os produtos filtrados
+    gerarCards(produtosFiltrados);
+}
+
 // Inicialização quando a página carregar
 document.addEventListener('DOMContentLoaded', function() {
     // carregarProdutos(); // Removido, pois agora é chamado após o fetch dos produtos
