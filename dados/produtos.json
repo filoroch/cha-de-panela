@@ -1,0 +1,364 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Cama",
+      "descricao": "Cama de casal com estrutura de madeira e colchão de espuma, ideal para um sono confortável.",
+      "categoria": "quarto",
+      "imagem": "data:image/jpeg;base64,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",
+      "disponivel": true
+    },
+    {
+      "id": "2",
+      "nome": "Pano de prato",
+      "descricao": "Pano de prato de algodão, super absorvente e fácil de lavar, essencial na cozinha.",
+      "categoria": "cozinha",
+      "imagem": "https://cdn.pixabay.com/photo/2017/08/07/14/02/kitchen-towel-2595567_1280.jpg",
+      "disponivel": true
+    },
+    {
+      "id": "3",
+      "nome": "Conjunto de tabuleiro",
+      "descricao": "Conjunto de tabuleiro de madeira, perfeito para servir petiscos e aperitivos.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "4",
+      "nome": "Panela de pressão",
+      "descricao": "Panela de pressão de 6 litros, ideal para preparar refeições rápidas e saudáveis.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "5",
+      "nome": "Porta condimentos",
+      "descricao": "Porta condimentos de vidro com tampa hermética, mantém os temperos frescos por mais tempo.",
+      "categoria": "cozinha",
+      "imagem": "https://cdn.pixabay.com/photo/2016/11/06/05/36/spice-jars-1805784_1280.jpg",
+      "disponivel": true
+    },
+    {
+      "id": "6",
+      "nome": "Pote hermético",
+      "descricao": "Pote hermético de 1 litro, ideal para armazenar alimentos e manter a frescura.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "7",
+      "nome": "Misteira",
+      "descricao": "Misteira de silicone, resistente ao calor, ideal para cozinhar sem grudar.",
+      "categoria": "cozinha",
+      "imagem": "https://cdn.pixabay.com/photo/2017/08/06/12/06/kitchen-utensils-2590191_1280.jpg",
+      "disponivel": true
+    },
+    {
+      "id": "8",
+      "nome": "Forma de silicone",
+      "descricao": "Forma de silicone antiaderente, perfeita para bolos e sobremesas.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "9",
+      "nome": "Lixeira de inox (banheiro)",
+      "descricao": "Lixeira de inox com pedal, ideal para o banheiro, fácil de usar e limpar.",
+      "categoria": "banheiro",
+      "imagem": "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "10",
+      "nome": "Escorredor de vasilha",
+      "descricao": "Escorredor de vasilha em inox, resistente e prático para a cozinha.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1556909001-f6cb1147ac82?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "11",
+      "nome": "Ventilador",
+      "descricao": "Ventilador de mesa, compacto e eficiente, ideal para os dias quentes.",
+      "categoria": "sala",
+      "imagem": "https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "12",
+      "nome": "Vasilhas",
+      "descricao": "Conjunto de vasilhas de plástico, ideal para armazenar e servir alimentos.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "13",
+      "nome": "Teavesa",
+      "descricao": "Teavesa de cerâmica, perfeita para preparar e servir chás.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "14",
+      "nome": "Jogo de colher",
+      "descricao": "Conjunto de colheres de inox, ideal para servir e cozinhar.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "15",
+      "nome": "Jogo de faca",
+      "descricao": "Conjunto de facas de cozinha, com lâminas afiadas e cabos ergonômicos.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1593618998160-e34014e67546?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "16",
+      "nome": "Jogo de cama",
+      "descricao": "Conjunto de jogo de cama queen size, com lençóis e fronhas de algodão.",
+      "categoria": "quarto",
+      "imagem": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "17",
+      "nome": "Travesseiro",
+      "descricao": "Travesseiro de espuma, ideal para um sono confortável e reparador.",
+      "categoria": "quarto",
+      "imagem": "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "18",
+      "nome": "Almofada",
+      "descricao": "Almofada decorativa, perfeita para dar um toque especial à sala.",
+      "categoria": "sala",
+      "imagem": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "19",
+      "nome": "Air Fryer",
+      "descricao": "Air Fryer de 4 litros, ideal para fritar alimentos com pouco óleo.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1574781330855-d0db8cc6a79c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "20",
+      "nome": "Microondas",
+      "descricao": "Microondas de 20 litros, com funções de descongelar e aquecer.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1556909001-b4333d93cf77?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "21",
+      "nome": "Espelho pra banheiro",
+      "descricao": "Espelho de parede com iluminação, ideal para o banheiro.",
+      "categoria": "banheiro",
+      "imagem": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "22",
+      "nome": "Tapete",
+      "descricao": "Tapete macio e aconchegante, ideal para a sala de estar.",
+      "categoria": "sala",
+      "imagem": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "23",
+      "nome": "Ferro de passar",
+      "descricao": "Ferro de passar a vapor, com base antiaderente e regulagem de temperatura.",
+      "categoria": "quarto",
+      "imagem": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "24",
+      "nome": "Tábua de carne",
+      "descricao": "Tábua de carne de madeira, ideal para preparar carnes e vegetais.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "25",
+      "nome": "Mop de limpar chão",
+      "descricao": "Mop de microfibra, ideal para limpar pisos com eficiência.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "26",
+      "nome": "Liquidificador",
+      "descricao": "Liquidificador de 600W, ideal para preparar sucos e vitaminas.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1574781330855-d0db8cc6a79c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "27",
+      "nome": "Mixer",
+      "descricao": "Mixer portátil, ideal para preparar molhos e sopas rapidamente.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1556909001-f6cb1147ac82?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "28",
+      "nome": "Jarra de vidro",
+      "descricao": "Jarra de vidro de 1,5 litros, ideal para servir bebidas.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1556909001-b4333d93cf77?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "29",
+      "nome": "Toalhas de banho",
+      "descricao": "Toalhas de banho macias e absorventes, ideais para o dia a dia.",
+      "categoria": "banheiro",
+      "imagem": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "30",
+      "nome": "Batedeira",
+      "descricao": "Batedeira planetária, ideal para preparar massas e bolos.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1574781330855-d0db8cc6a79c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "31",
+      "nome": "Cortina blackout",
+      "descricao": "Cortina blackout, ideal para bloquear a luz e garantir privacidade.",
+      "categoria": "sala",
+      "imagem": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "32",
+      "nome": "Cobertor",
+      "descricao": "Cobertor quentinho, ideal para as noites frias.",
+      "categoria": "quarto",
+      "imagem": "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "33",
+      "nome": "Kit pia banheiro",
+      "descricao": "Kit com saboneteira, porta escova e lixeira, ideal para o banheiro.",
+      "categoria": "banheiro",
+      "imagem": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "34",
+      "nome": "Kit pia cozinha",
+      "descricao": "Kit com escorredor, pano de prato e lixeira, ideal para a cozinha.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1556909001-f6cb1147ac82?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "35",
+      "nome": "Ralador",
+      "descricao": "Ralador de inox, ideal para queijos e vegetais.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "36",
+      "nome": "Toalha de rosto",
+      "descricao": "Toalha de rosto macia e absorvente, ideal para o dia a dia.",
+      "categoria": "banheiro",
+      "imagem": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "37",
+      "nome": "Frigideira",
+      "descricao": "Frigideira antiaderente, ideal para fritar e grelhar alimentos.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "38",
+      "nome": "Rodo",
+      "descricao": "Rodo de limpeza, ideal para pisos e superfícies.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "39",
+      "nome": "Vassoura",
+      "descricao": "Vassoura de piaçava, ideal para varrer áreas internas e externas.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "40",
+      "nome": "Pano de chão",
+      "descricao": "Pano de chão de microfibra, ideal para limpeza eficiente.",
+      "categoria": "cozinha",
+      "imagem": "https://cdn.pixabay.com/photo/2017/08/07/14/02/kitchen-towel-2595567_1280.jpg",
+      "disponivel": true
+    },
+    {
+      "id": "41",
+      "nome": "Garrafa de café",
+      "descricao": "Garrafa térmica de café, ideal para manter a bebida quente por mais tempo.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1556909001-b4333d93cf77?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "42",
+      "nome": "Coador",
+      "descricao": "Coador de café de papel, ideal para preparar um café fresco.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "43",
+      "nome": "Triturador",
+      "descricao": "Triturador de alimentos, ideal para preparar molhos e temperos.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1574781330855-d0db8cc6a79c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "44",
+      "nome": "Aspirador de pó (pode ser do robôzinho)",
+      "descricao": "Aspirador de pó potente, ideal para manter a casa limpa e livre de sujeira.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    },
+    {
+      "id": "45",
+      "nome": "Varal de chão",
+      "descricao": "Varal de chão dobrável, ideal para secar roupas ao ar livre.",
+      "categoria": "cozinha",
+      "imagem": "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      "disponivel": true
+    }
+  ]
+}

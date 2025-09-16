@@ -1,48 +1,14 @@
 // Dados dos produtos
-const produtos = [
-    {
-        id: 1,
-        nome: "Panela de Pressão",
-        descricao: "Panela de pressão 5 litros em alumínio, ideal para cozinhar feijão, carnes e legumes de forma rápida e prática.",
-        imagem: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSvyOG7WTEvsAYiRLlpermcdhSqPYKv_Q_4wuAGNHfHg7EYx5wHIA0qF3ekSoig7chah19X1QQUfZxOhId56nQE8L1vuPaMCHLqzm4XaaoTdsdS_RSB8nOf",
-        categoria: "cozinha"
-    },
-    {
-        id: 2,
-        nome: "Jogo de Talheres",
-        descricao: "Conjunto completo com 42 peças em aço inox, incluindo garfos, facas, colheres e utensílios de servir.",
-        imagem: "images/talheres.jpg",
-        categoria: "cozinha"
-    },
-    {
-        id: 3,
-        nome: "Sofá 3 Lugares",
-        descricao: "Sofá confortável de 3 lugares em tecido suede, cor cinza, perfeito para a sala de estar.",
-        imagem: "images/sofa.jpg",
-        categoria: "sala"
-    },
-    {
-        id: 4,
-        nome: "Jogo de Lençol",
-        descricao: "Jogo de lençol casal 100% algodão, com 4 peças: lençol, lençol elástico e 2 fronhas.",
-        imagem: "images/lencol.jpg",
-        categoria: "quarto"
-    },
-    {
-        id: 5,
-        nome: "Toalha de Banho",
-        descricao: "Kit com 4 toalhas de banho em algodão, macias e absorventes, cores neutras.",
-        imagem: "images/toalha.jpg",
-        categoria: "banheiro"
-    },
-    {
-        id: 6,
-        nome: "Liquidificador",
-        descricao: "Liquidificador potente com copo de vidro de 2 litros, 12 velocidades e função pulsar.",
-        imagem: "images/liquidificador.jpg",
-        categoria: "cozinha"
-    }
-];
+let produtos = [];
+
+// Carregar dados dos produtos do arquivo JSON
+fetch('dados/produtos.json')
+    .then(response => response.json())
+    .then(data => {
+        produtos = data.produtos;
+        carregarProdutos();
+    })
+    .catch(error => console.error('Erro ao carregar os produtos:', error));
 
 // Função para carregar produtos dinamicamente
 function carregarProdutos() {
@@ -188,7 +154,7 @@ function enviarFormulario(event) {
 
 // Inicialização quando a página carregar
 document.addEventListener('DOMContentLoaded', function() {
-    carregarProdutos();
+    // carregarProdutos(); // Removido, pois agora é chamado após o fetch dos produtos
     
     // Event listeners
     document.getElementById('telefone').addEventListener('input', function() {
