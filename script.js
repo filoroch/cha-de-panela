@@ -7,6 +7,7 @@ fetch('dados/produtos.json')
     .then(data => {
         produtos = data.produtos;
         carregarProdutos();
+        configurarFiltros(); // Adiciona configuração dos filtros após carregar produtos
     })
     .catch(error => console.error('Erro ao carregar os produtos:', error));
 
@@ -22,8 +23,8 @@ function carregarProdutos(listaProdutos = produtos) {
     // Limpa o container
     container.innerHTML = '';
 
-    // Gera os cards
-    produtos.forEach(produto => {
+    // Gera os cards com a lista fornecida (filtrada ou completa)
+    listaProdutos.forEach(produto => {
         const cardHTML = `
             <div class="card-gift" data-produto-id="${produto.id}">
                 <img src="${produto.imagem}" alt="${produto.nome}" class="card-image" onerror="this.src='images/placeholder.svg'">
@@ -35,6 +36,50 @@ function carregarProdutos(listaProdutos = produtos) {
         `;
         container.insertAdjacentHTML('beforeend', cardHTML);
     });
+}
+
+// Função para configurar os filtros
+function configurarFiltros() {
+    const filterButtons = document.querySelectorAll('.main_gifts_btns_btn');
+    
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const filterText = button.textContent.trim();
+            
+            // Remove classe ativa de todos os botões
+            filterButtons.forEach(btn => btn.classList.remove('ativo'));
+            // Adiciona classe ativa ao botão clicado
+            button.classList.add('ativo');
+            
+            filtrarProdutos(filterText);
+        });
+    });
+}
+
+// Função para filtrar produtos
+function filtrarProdutos(categoria) {
+    let produtosFiltrados;
+    
+    // Mapeia o texto do botão para a categoria no JSON
+    const mapeamentoCategoria = {
+        'Sala': 'sala',
+        'Cozinha': 'cozinha', 
+        'Quarto': 'quarto',
+        'Banheiro': 'banheiro'
+    };
+    
+    const categoriaMinuscula = mapeamentoCategoria[categoria];
+    
+    if (categoriaMinuscula) {
+        produtosFiltrados = produtos.filter(produto => 
+            produto.categoria.toLowerCase() === categoriaMinuscula
+        );
+    } else {
+        produtosFiltrados = produtos; // Fallback para mostrar todos
+    }
+    
+    // Chama a função correta para gerar os cards
+    carregarProdutos(produtosFiltrados);
 }
 
 // Função para abrir o modal
@@ -152,28 +197,9 @@ function enviarFormulario(event) {
     }
 }
 
-// Adiciona eventos de clique aos botões de filtro
-const filterButtons = document.querySelectorAll('.main_gifts_btns_btn');
-
-filterButtons.forEach(button => {
-    button.addEventListener('click', () => {
-        const filterType = button.textContent;
-        filtrarProdutos(filterType);
-    });
-});
-
-function filtrarProdutos(categoria) {
-    // Aqui você deve ter um array de produtos disponível
-    const produtosFiltrados = produtos.filter(produto => produto.categoria === categoria);
-    // Chama a função que gera os cards com os produtos filtrados
-    carregarProdutos(produtosFiltrados);
-}
-
 // Inicialização quando a página carregar
 document.addEventListener('DOMContentLoaded', function() {
-    // carregarProdutos(); // Removido, pois agora é chamado após o fetch dos produtos
-    
-    // Event listeners
+    // Event listeners para o modal
     document.getElementById('telefone').addEventListener('input', function() {
         formatarTelefone(this);
     });
