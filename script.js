@@ -11,7 +11,7 @@ fetch('dados/produtos.json')
     .catch(error => console.error('Erro ao carregar os produtos:', error));
 
 // Função para carregar produtos dinamicamente
-function carregarProdutos() {
+function carregarProdutos(listaProdutos = produtos) {
     const container = document.querySelector('.gifts-section');
     
     if (!container) {
@@ -39,7 +39,7 @@ function carregarProdutos() {
 
 // Função para abrir o modal
 function abrirModal(produtoId) {
-    const produto = produtos.find(p => p.id === produtoId);
+    const produto = produtos.find(p => p.id == produtoId);
     
     if (!produto) {
         console.error('Produto não encontrado');
@@ -162,9 +162,9 @@ filterButtons.forEach(button => {
     });
 });
 
-function filtrarProdutos(tipo) {
+function filtrarProdutos(categoria) {
     // Aqui você deve ter um array de produtos disponível
-    const produtosFiltrados = produtos.filter(produto => produto.tipo === tipo);
+    const produtosFiltrados = produtos.filter(produto => produto.categoria === categooria);
     // Chama a função que gera os cards com os produtos filtrados
     gerarCards(produtosFiltrados);
 }
