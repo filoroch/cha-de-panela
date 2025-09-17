@@ -26,7 +26,7 @@ function carregarProdutos(listaProdutos = produtos) {
     produtos.forEach(produto => {
         const cardHTML = `
             <div class="card-gift" data-produto-id="${produto.id}">
-                <img src="${produto.imagem}" alt="${produto.nome}" class="card-image" onerror="this.src='images/placeholder.jpg'">
+                <img src="${produto.imagem}" alt="${produto.nome}" class="card-image" onerror="this.src='images/placeholder.svg'">
                 <div class="card-content">
                     <h3>${produto.nome}</h3>
                     <button class="btn-marcar" onclick="abrirModal(${produto.id})">Marcar para presentear</button>
