@@ -166,7 +166,7 @@ function filtrarProdutos(categoria) {
     // Aqui você deve ter um array de produtos disponível
     const produtosFiltrados = produtos.filter(produto => produto.categoria === categoria);
     // Chama a função que gera os cards com os produtos filtrados
-    gerarCards(produtosFiltrados);
+    carregarProdutos(produtosFiltrados);
 }
 
 // Inicialização quando a página carregar
