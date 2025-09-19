@@ -4,6 +4,8 @@
 :root{
     --main-font: 'Instrument Serif', serif;
     --second-font: "Kameron", serif;
+    --marron: #6F2C11;
+    --laranja: #F88E29;
 }
 
 /* base for rem calculations */
@@ -24,6 +26,7 @@ html{ font-size: 16px; }
     font-family: var(--main-font);
     text-align: center;
     padding-bottom: 1rem;
+    color: var(--marron);
 }
 
 .header_nav_infos{
@@ -41,6 +44,7 @@ html{ font-size: 16px; }
     color: inherit;
     font-family: var(--second-font);
     font-size: 1rem; /* Aumentado de 0.90rem */
+    color: var(--marron);
 }
 .info_link:hover{
     text-decoration:underline;
@@ -50,6 +54,16 @@ html{ font-size: 16px; }
 main{
     margin-top: 3rem; /* Diminuído de 4rem */
     text-align: center;
+}
+.main_info{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.11)),url(images/bg.png);
+    background-size: cover;
+    background-position: center;
+    color: White;
+    padding: 5% 10%;
+    border: 1px solid white;
+    margin: 0 1rem;
+    border-radius: 0.5rem;
 }
 .main_info > h1{
     font-size: 2rem; /* Diminuído de 2.5rem */
@@ -62,9 +76,7 @@ main{
 }
 
 .main_info > p{
-    margin-top: 2rem; /* Diminuído de 3rem */
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 2rem 2rem;;
     font: 400 0.75rem var(--second-font); /* 24px */
     line-height: 1.5;
 }
@@ -77,6 +89,7 @@ main{
 .main_gifts > h2{
     font-family: var(--main-font);
     font-size: 2rem;
+    color: var(--marron);
 }
 
 .main_gifts_btns{
@@ -91,10 +104,12 @@ main{
     border: none;
     border-radius: 0.7rem;
     padding: 0.3rem;
+    background-color: var(--laranja);
+    color: #e0e0e0;
 }
 
 .main_gifts_btns_btn:hover{
-    background-color: black;
+    background-color: var(--marron);
     color: white;
     
 }
@@ -391,7 +406,7 @@ main{
 @media (min-width: 1024px){
     .header_nav{
         display: flex;
-        padding: 1rem 1.875rem 0 1rem; /* ~16px 30px 0 16px */
+        padding: 1rem 3.875rem 0 3rem /* ~16px 30px 0 16px */;
         justify-content: space-between;
         align-items: center;
     }
@@ -408,7 +423,10 @@ main{
         flex-direction: row; /* Muda para row no desktop */
         gap: 3.75rem; /* 60px */
         font-family: var(--second-font);
-        font-size: 2rem; /* 32px - dobrado de 1rem */
+        font-size: 3rem; /* 32px - dobrado de 1rem */
+    }
+    .info_link{
+        font-size: 1.1rem;
     }
     
     .main_info > h1{
@@ -427,10 +445,20 @@ main{
         line-height: 1.5;
     }
 
+    .main_info{
+        color: #e0e0e0;
+        padding: 5% 10%;
+        border: 1px solid white;
+        margin: 0 3rem;
+        border-radius: 17px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.11)),url(images/bg.png);
+        background-size: cover;
+        box-shadow: 0 10px 15px rgba(49, 48, 45, 0.253);
+    }
+
     .main_gifts > h2{
         font-size: 3.5rem; /* 64px - duplicado de 2rem */
         margin-top: 5rem;
-
     }
 
     .main_gifts{
